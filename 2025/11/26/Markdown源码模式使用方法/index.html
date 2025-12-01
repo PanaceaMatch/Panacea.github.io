@@ -1,0 +1,359 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Markdown 完整常用语法清单 | 我的笔记博客</title><meta name="author" content="Panacea"><meta name="copyright" content="Panacea"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Markdown 完整常用语法清单一、基础文本格式1. 标题（层级结构）   层级 源码写法 渲染效果 HTML 对应    一级 # 一级标题（# 后空格） # 一级标题（最大号加粗） 	&lt;h1&gt;   二级 ## 二级标题 ## 二级标题（大号） &lt;h2&gt;   三级 ### 三级标题 ### 三级标题（中号） &lt;h3&gt;   四级 #### 四级标题 ####">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown 完整常用语法清单">
+<meta property="og:url" content="http://example.com/2025/11/26/Markdown%E6%BA%90%E7%A0%81%E6%A8%A1%E5%BC%8F%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/index.html">
+<meta property="og:site_name" content="我的笔记博客">
+<meta property="og:description" content="Markdown 完整常用语法清单一、基础文本格式1. 标题（层级结构）   层级 源码写法 渲染效果 HTML 对应    一级 # 一级标题（# 后空格） # 一级标题（最大号加粗） 	&lt;h1&gt;   二级 ## 二级标题 ## 二级标题（大号） &lt;h2&gt;   三级 ### 三级标题 ### 三级标题（中号） &lt;h3&gt;   四级 #### 四级标题 ####">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/%E5%A4%B4%E5%83%8F.png">
+<meta property="article:published_time" content="2025-11-25T19:46:30.155Z">
+<meta property="article:modified_time" content="2025-11-25T20:21:31.368Z">
+<meta property="article:author" content="Panacea">
+<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="Markdown">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/%E5%A4%B4%E5%83%8F.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Markdown 完整常用语法清单",
+  "url": "http://example.com/2025/11/26/Markdown%E6%BA%90%E7%A0%81%E6%A8%A1%E5%BC%8F%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/",
+  "image": "http://example.com/img/%E5%A4%B4%E5%83%8F.png",
+  "datePublished": "2025-11-25T19:46:30.155Z",
+  "dateModified": "2025-11-25T20:21:31.368Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Panacea",
+      "url": "http://example.com"
+    }
+  ]
+}</script><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2025/11/26/Markdown%E6%BA%90%E7%A0%81%E6%A8%A1%E5%BC%8F%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=5.5.2"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.1.0/css/all.min.css"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'null',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.12.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Markdown 完整常用语法清单',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="web_bg" style="background-image: url(/img/%E8%83%8C%E6%99%AF%E5%9B%BE%E7%89%87.jpg);"></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">我的笔记博客</span></a><a class="nav-page-title" href="/"><span class="site-name">Markdown 完整常用语法清单</span><span class="site-name"><i class="fa-solid fa-circle-arrow-left"></i><span>  返回首页</span></span></a></span><div id="menus"></div></nav><div id="post-info"><h1 class="post-title">Markdown 完整常用语法清单</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-11-25T19:46:30.155Z" title="发表于 2025-11-26 03:46:30">2025-11-26</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-11-25T20:21:31.368Z" title="更新于 2025-11-26 04:21:31">2025-11-26</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%8A%80%E6%9C%AF%E5%88%86%E4%BA%AB/">技术分享</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h1 id="Markdown-完整常用语法清单"><a href="#Markdown-完整常用语法清单" class="headerlink" title="Markdown 完整常用语法清单"></a>Markdown 完整常用语法清单</h1><h2 id="一、基础文本格式"><a href="#一、基础文本格式" class="headerlink" title="一、基础文本格式"></a>一、基础文本格式</h2><h3 id="1-标题（层级结构）"><a href="#1-标题（层级结构）" class="headerlink" title="1. 标题（层级结构）"></a>1. 标题（层级结构）</h3><table>
+<thead>
+<tr>
+<th align="center">层级</th>
+<th align="left">源码写法</th>
+<th align="left">渲染效果</th>
+<th align="left">HTML 对应</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">一级</td>
+<td align="left"><code># 一级标题</code>（# 后空格）</td>
+<td align="left"># 一级标题（最大号加粗）</td>
+<td align="left"><code>	&lt;h1&gt;</code></td>
+</tr>
+<tr>
+<td align="center">二级</td>
+<td align="left"><code>## 二级标题</code></td>
+<td align="left">## 二级标题（大号）</td>
+<td align="left"><code>&lt;h2&gt;</code></td>
+</tr>
+<tr>
+<td align="center">三级</td>
+<td align="left"><code>### 三级标题</code></td>
+<td align="left">### 三级标题（中号）</td>
+<td align="left"><code>&lt;h3&gt;</code></td>
+</tr>
+<tr>
+<td align="center">四级</td>
+<td align="left"><code>#### 四级标题</code></td>
+<td align="left">#### 四级标题（小号）</td>
+<td align="left"><code>&lt;h4&gt;</code></td>
+</tr>
+<tr>
+<td align="center">五级</td>
+<td align="left"><code>##### 五级标题</code></td>
+<td align="left">##### 五级标题（更小）</td>
+<td align="left"><code>&lt;h5&gt;</code></td>
+</tr>
+<tr>
+<td align="center">六级</td>
+<td align="left"><code>###### 六级标题</code></td>
+<td align="left">###### 六级标题（最小）</td>
+<td align="left"><code>&lt;h2&gt;</code></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p><strong>小贴士：</strong> Typora 中按 Ctrl+1~6 可快速切换标题层级。</p>
+</blockquote>
+<h3 id="2-段落与换行"><a href="#2-段落与换行" class="headerlink" title="2.  段落与换行"></a>2.  段落与换行</h3><table>
+<thead>
+<tr>
+<th align="center">功能</th>
+<th align="left">源码写法</th>
+<th align="left">渲染效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">普通段落</td>
+<td align="left">直接写文本，段落间空一行</td>
+<td align="left">段落 1 <br> 段落2（空行分隔）</td>
+</tr>
+<tr>
+<td align="center">强制换行</td>
+<td align="left">行尾加 2 个空格 + 回车 或 <code>&lt;br&gt;</code></td>
+<td align="left">第一行（2 个空格结尾<br>第二行（强制换行））</td>
+</tr>
+</tbody></table>
+<h3 id="3-文本强调（突出重点）"><a href="#3-文本强调（突出重点）" class="headerlink" title="3.  文本强调（突出重点）"></a>3.  文本强调（突出重点）</h3><table>
+<thead>
+<tr>
+<th align="center">层级</th>
+<th align="left">源码写法</th>
+<th align="left">示例</th>
+<th align="left">渲染效果</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">斜体</td>
+<td align="left"><code>*文本*</code> 或 <code>_文本_</code></td>
+<td align="left"><code>*斜体内容*</code></td>
+<td align="left"><em>斜体内容</em></td>
+</tr>
+<tr>
+<td align="center">粗体</td>
+<td align="left"><code>**文本**</code> 或 <code>__文本__</code></td>
+<td align="left"><code>**粗体内容**</code></td>
+<td align="left"><strong>粗体内容</strong></td>
+</tr>
+<tr>
+<td align="center">粗斜体</td>
+<td align="left"><code>***文本***</code> 或 <code>___文本___</code></td>
+<td align="left"><code>***粗斜体体内容***</code></td>
+<td align="left"><em><strong>粗斜体体内容</strong></em></td>
+</tr>
+<tr>
+<td align="center">删除线</td>
+<td align="left"><code>~~文本~~</code></td>
+<td align="left"><code>~~删除内容~~</code></td>
+<td align="left"><del>删除内容</del></td>
+</tr>
+<tr>
+<td align="center">下划线</td>
+<td align="left"><code>&lt;u&gt;文本&lt;/u&gt;</code>（HTML 标签）</td>
+<td align="left"><code>&lt;u&gt;下划线内容&lt;/u&gt;</code></td>
+<td align="left"><u>下划线内容</u></td>
+</tr>
+</tbody></table>
+<h3 id="4-列表（有序-无序-任务）"><a href="#4-列表（有序-无序-任务）" class="headerlink" title="4.  列表（有序 &#x2F; 无序 &#x2F; 任务）"></a>4.  列表（有序 &#x2F; 无序 &#x2F; 任务）</h3><p><strong>(1)  无序列表（无需排序）</strong><br><strong>源码写法：</strong> <code>-</code>&#x2F;<code>*</code>&#x2F;<code>+</code> + 空格 + 文本（可嵌套，缩进 2 个空格）</p>
+<p><strong>示例</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> 前端技术栈</span><br><span class="line"><span class="bullet">  -</span> Vue 3.x</span><br><span class="line"><span class="bullet">  -</span> React（可选）</span><br><span class="line"><span class="bullet">    -</span> Next.js 框架</span><br><span class="line"><span class="bullet">-</span> 后端技术栈</span><br><span class="line"><span class="bullet">  -</span> Java + Spring Boot</span><br></pre></td></tr></table></figure>
+<p><strong>渲染效果</strong></p>
+<ul>
+<li>前端技术栈<ul>
+<li>Vue 3.x</li>
+<li>React（可选）<ul>
+<li>Next.js 框架</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>后端技术栈<ul>
+<li>Java + Spring Boot</li>
+</ul>
+</li>
+</ul>
+<p><strong>(2)  有序列表（需要排序）</strong><br><strong>源码写法：</strong> <code>数字.</code>+ 空格 + 文本（序号自动递增，嵌套缩进）</p>
+<p><strong>示例</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">1.</span> 环境准备</span><br><span class="line"><span class="bullet">   1.</span> 安装 JDK 1.8+</span><br><span class="line"><span class="bullet">   2.</span> 安装 MySQL 8.0</span><br><span class="line"><span class="bullet">2.</span> 项目启动</span><br><span class="line"><span class="bullet">   1.</span> 执行 SQL 脚本</span><br><span class="line"><span class="bullet">   2.</span> 启动应用</span><br></pre></td></tr></table></figure>
+<p><strong>渲染效果</strong></p>
+<ol>
+<li>环境准备<ol>
+<li>安装 JDK 1.8+</li>
+<li>安装 MySQL 8.0</li>
+</ol>
+</li>
+<li>项目启动<ol>
+<li>执行 SQL 脚本</li>
+<li>启动应用</li>
+</ol>
+</li>
+</ol>
+<p><strong>（3）任务列表（待办 &#x2F; 已完成）</strong><br><strong>源码写法：</strong> <code>- [ ] 未完成</code> &#x2F;<code> - [x] 已完成</code>（中括号内空格 &#x2F;x，符号后空格）</p>
+<p><strong>示例</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> [x] 完成 Markdown 语法整理</span><br><span class="line"><span class="bullet">-</span> [ ] 编写示例文档</span><br><span class="line"><span class="bullet">-</span> [ ] 测试兼容性</span><br></pre></td></tr></table></figure>
+<p><strong>渲染效果</strong></p>
+<ul>
+<li><input checked="" disabled="" type="checkbox"> 完成 Markdown 语法整理</li>
+<li><input disabled="" type="checkbox"> 编写示例文档</li>
+<li><input disabled="" type="checkbox"> 测试兼容性</li>
+</ul>
+<h3 id="5-引用（标注说明-引用内容）"><a href="#5-引用（标注说明-引用内容）" class="headerlink" title="5. 引用（标注说明 &#x2F; 引用内容）"></a>5. 引用（标注说明 &#x2F; 引用内容）</h3><p><strong>源码写法：</strong> <code>&gt;</code> + 空格 + 文本（可嵌套，<code>&gt;&gt;</code> 二级引用）</p>
+<p><strong>示例</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="quote">&gt; 核心说明：本接口仅支持 POST 请求。</span></span><br><span class="line">&gt;&gt; 补充备注：请求头需携带 Token（有效期 2 小时）。</span><br></pre></td></tr></table></figure>
+<p><strong>渲染效果</strong></p>
+<blockquote>
+<p>核心说明：本接口仅支持 POST 请求。</p>
+<blockquote>
+<p>补充备注：请求头需携带 Token（有效期 2 小时）。</p>
+</blockquote>
+</blockquote>
+<blockquote>
+<p><strong>小贴士：</strong> Ctrl+Shift+Q 可快速插入引用。</p>
+</blockquote>
+<h3 id="6-水平分隔线（分割章节）"><a href="#6-水平分隔线（分割章节）" class="headerlink" title="6. 水平分隔线（分割章节）"></a>6. 水平分隔线（分割章节）</h3><p><strong>源码写法：</strong> 单独一行输入 <code>---</code>&#x2F;<code>***</code>&#x2F;<code>___</code>（前后空行避免冲突）</p>
+<p><strong>示例</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="section">## 第一章节</span></span><br><span class="line">内容...</span><br><span class="line"></span><br><span class="line">---</span><br><span class="line"></span><br><span class="line"><span class="section">## 第二章节</span></span><br><span class="line">内容...。</span><br></pre></td></tr></table></figure>
+<p><strong>渲染效果</strong></p>
+<h2 id="第一章节"><a href="#第一章节" class="headerlink" title="第一章节"></a>第一章节</h2><p>内容…</p>
+<hr>
+<h2 id="第二章节"><a href="#第二章节" class="headerlink" title="第二章节"></a>第二章节</h2><p>内容…</p>
+<h2 id="二、链接与图片（文档跳转-配图）"><a href="#二、链接与图片（文档跳转-配图）" class="headerlink" title="二、链接与图片（文档跳转 &#x2F; 配图）"></a>二、链接与图片（文档跳转 &#x2F; 配图）</h2><h3 id="1-外部链接（跳转网页）"><a href="#1-外部链接（跳转网页）" class="headerlink" title="1. 外部链接（跳转网页）"></a>1. 外部链接（跳转网页）</h3><p><strong>源码写法：</strong> <code>[链接文本](链接地址 &quot;可选 hover 标题&quot;)</code></p>
+<p><strong>示例</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">-</span> 官方文档：[<span class="string">Vue.js</span>](<span class="link">https://v3.vuejs.org/ &quot;Vue 3 官方指南&quot;</span>)</span><br><span class="line"><span class="bullet">-</span> GitHub 仓库：[<span class="string">Markdown 语法</span>](<span class="link">https://github.com/commonmark/commonmark-spec</span>)</span><br></pre></td></tr></table></figure>
+<p><strong>渲染效果</strong></p>
+<ul>
+<li>官方文档：<a target="_blank" rel="noopener" href="https://v3.vuejs.org/" title="Vue 3 官方指南">Vue.js</a></li>
+<li>GitHub 仓库：<a target="_blank" rel="noopener" href="https://github.com/commonmark/commonmark-spec">Markdown 语法</a></li>
+</ul>
+<h3 id="2-内部链接（文档内跳转）"><a href="#2-内部链接（文档内跳转）" class="headerlink" title="2. 内部链接（文档内跳转）"></a>2. 内部链接（文档内跳转）</h3><p><strong>源码写法：</strong> <code>[链接文本](#目标标题)</code>（目标标题需去掉特殊字符，空格替换为<code>-</code>）</p>
+<p><strong>示例</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 目录</span></span><br><span class="line"><span class="bullet">-</span> [<span class="string">1. 项目介绍</span>](<span class="link">#1-项目介绍</span>)</span><br><span class="line"><span class="bullet">-</span> [<span class="string">2. 接口说明</span>](<span class="link">#2-接口说明</span>)</span><br><span class="line"></span><br><span class="line"><span class="section">## 1. 项目介绍（跳转目标）</span></span><br><span class="line"><span class="section">## 2. 接口说明（跳转目标）</span></span><br></pre></td></tr></table></figure>
+<p><strong>渲染效果：</strong> 点击目录链接可直接跳转到对应章节（长文档必备）</p>
+<h3 id="3-图片（插入本地-网络图片））"><a href="#3-图片（插入本地-网络图片））" class="headerlink" title="3.  图片（插入本地 &#x2F; 网络图片））"></a>3.  图片（插入本地 &#x2F; 网络图片））</h3><p><strong>源码写法：</strong> <code>![alt 文本](图片地址 &quot;可选标题&quot;)</code>（alt 文本为图片加载失败时显示，标题为鼠标悬浮显示）</p>
+<p><strong>示例</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="section"># 目录</span></span><br><span class="line"><span class="bullet">-</span> 网络图片：![<span class="string">Vue Logo</span>](<span class="link">https://v3.vuejs.org/logo.png &quot;Vue Logo&quot;</span>)</span><br><span class="line"><span class="bullet">-</span> 本地图片：![<span class="string">架构图</span>](<span class="link">./docs/architecture.png</span>)（相对路径，建议放 docs 目录）</span><br></pre></td></tr></table></figure>
+<p><strong>渲染效果：</strong> </p>
+<p><img src="/asset/2-01.png" alt="图片详情" title="图片标题"></p>
+<h2 id="三、代码与终端（技术文档核心）"><a href="#三、代码与终端（技术文档核心）" class="headerlink" title="三、代码与终端（技术文档核心）"></a>三、代码与终端（技术文档核心）</h2><h3 id="1-行内代码（短代码片段）"><a href="#1-行内代码（短代码片段）" class="headerlink" title="1. 行内代码（短代码片段）"></a>1. 行内代码（短代码片段）</h3><p><strong>源码写法：</strong>  <code>代码内容</code>（反引号包裹，避免与代码内字符冲突）</p>
+<p><strong>示例</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">核心依赖：<span class="code">`spring-boot-starter-web`</span>，执行命令：<span class="code">`mvn clean package -DskipTests`</span></span><br></pre></td></tr></table></figure>
+<p><strong>渲染效果：</strong><br>核心依赖：<code>spring-boot-starter-web</code>，执行命令：<code>mvn clean package -DskipTests</code></p>
+<h3 id="多行代码块（长代码-配置）"><a href="#多行代码块（长代码-配置）" class="headerlink" title="多行代码块（长代码 &#x2F; 配置）"></a>多行代码块（长代码 &#x2F; 配置）</h3><p><strong>源码写法：</strong>  3 个反引号 <code>&lt;/```/&gt;</code> 包裹，指定语言可实现语法高亮</p>
+<p><strong>示例</strong></p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="code">```java</span></span><br><span class="line"><span class="code">// 用户实体类</span></span><br><span class="line"><span class="code">public class User &#123;</span></span><br><span class="line"><span class="code">    private Long id;</span></span><br><span class="line"><span class="code">    private String username;</span></span><br><span class="line"><span class="code">    // getter/setter</span></span><br><span class="line"><span class="code">&#125;</span></span><br></pre></td></tr></table></figure>
+<p><strong>渲染效果：</strong> </p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 用户实体类</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">User</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line">    <span class="keyword">private</span> String username;</span><br><span class="line">    <span class="comment">// getter/setter</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="http://example.com">Panacea</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2025/11/26/Markdown%E6%BA%90%E7%A0%81%E6%A8%A1%E5%BC%8F%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/">http://example.com/2025/11/26/Markdown%E6%BA%90%E7%A0%81%E6%A8%A1%E5%BC%8F%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="http://example.com" target="_blank">我的笔记博客</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Hexo/">Hexo</a><a class="post-meta__tags" href="/tags/Markdown/">Markdown</a></div><div class="post-share"><div class="social-share" data-image="/img/%E5%A4%B4%E5%83%8F.png" data-sites="facebook,x,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/2025/11/26/NVM%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" title="NVM的安装与配置"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">NVM的安装与配置</div></div><div class="info-2"><div class="info-item-1"> nvm（Node Version Manager）是管理 Node.js 版本的工具，支持在同一台设备上安装多个 Node.js 版本，并随时切换。  一、系统安装 nvm步骤：  下载安装包 进入 GitHub Releases，下载最新版的 nvm-setup.exe（或 nvm-setup.zip）。 运行安装程序   选择 nvm 安装路径（建议默认 C:\Users\你的用户名\AppData\Roaming\nvm，避免中文 &#x2F; 空格路径）。 选择 Node.js symlink 路径（默认 C:\Program Files\nodejs，无需修改）。 安装完成后，关闭现有命令行，重新打开。   验证安装执行命令 nvm version，显示版本号即安装成功  二、nvm 核心配置（必做）1. 设置 Node.js 镜像（解决下载慢 &#x2F; 失败）默认从 Node.js 官网下载，国内建议切换为 淘宝镜像（或阿里云镜像）： 1234567# 淘宝镜像（推荐）nvm node_mirror https://npmmirror.com/mirrors/n...</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related" href="/2025/11/26/NVM%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" title="NVM的安装与配置"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-11-26</div><div class="info-item-2">NVM的安装与配置</div></div><div class="info-2"><div class="info-item-1"> nvm（Node Version Manager）是管理 Node.js 版本的工具，支持在同一台设备上安装多个 Node.js 版本，并随时切换。  一、系统安装 nvm步骤：  下载安装包 进入 GitHub Releases，下载最新版的 nvm-setup.exe（或 nvm-setup.zip）。 运行安装程序   选择 nvm 安装路径（建议默认 C:\Users\你的用户名\AppData\Roaming\nvm，避免中文 &#x2F; 空格路径）。 选择 Node.js symlink 路径（默认 C:\Program Files\nodejs，无需修改）。 安装完成后，关闭现有命令行，重新打开。   验证安装执行命令 nvm version，显示版本号即安装成功  二、nvm 核心配置（必做）1. 设置 Node.js 镜像（解决下载慢 &#x2F; 失败）默认从 Node.js 官网下载，国内建议切换为 淘宝镜像（或阿里云镜像）： 1234567# 淘宝镜像（推荐）nvm node_mirror https://npmmirror.com/mirrors/n...</div></div></div></a><a class="pagination-related" href="/2025/11/28/Vue%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E8%AF%A6%E8%A7%A3/" title="Vue项目结构详解"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-11-28</div><div class="info-item-2">Vue项目结构详解</div></div><div class="info-2"><div class="info-item-1">Vue项目结构Vue CLI 创建的 Vue 项目结构，以及与 Vite + TypeScript 项目的主要差异 一、不同构建工具的项目结构 Vue CLI 创建的 Vue 项目结构（以 Vue 3 为例） 12345678910111213141516171819202122232425262728my-vue-cli-project/├── node_modules/        # 项目依赖（npm install 安装）├── public/              # 静态资源目录（直接复制到构建根目录，不经过 webpack 处理）│   ├── favicon.ico      # 网站图标│   └── index.html       # 入口 HTML 模板（webpack 打包时会注入构建产物）├── src/                 # 源代码目录（核心代码）│   ├── assets/          # 静态资源（会被 webpack 处理，如图片、样式文件）│   │   ├── logo.png     # 示例图片│   │  ...</div></div></div></a><a class="pagination-related" href="/2025/11/26/Hexo%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/" title="Hexo 搭建过程"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-11-26</div><div class="info-item-2">Hexo 搭建过程</div></div><div class="info-2"><div class="info-item-1">Hexo 博客搭建完整指南一. 环境准备安装 Node.js 访问 Node.js 官网 下载并安装 LTS 版本 验证安装是否成功：  12node -vnpm -v  二. 创建 Hexo 项目（初始化博客） 选一个存放博客的文件夹（比如「我的文档」），终端进入该文件夹：1cd C:\Users\你的用户名\我的文档  # Windows 示例 初始化 Hexo 项目（会自动创建一个名为 my-hexo-blog 的博客文件夹）：1cd hexo init my-hexo-blog 进入博客根目录，安装依赖包：12cd my-hexo-blog  # 进入博客文件夹npm install      # 安装项目依赖（自动下载所需文件）  三、启动本地预览（查看博客效果）在博客根目录执行以下命令，启动本地服务器： 1hexo server  # 简写：hexo s  启动成功后，终端会显示 http://localhost:4000，打开浏览器访问这个地址，就能看到 Hexo 默认博客页面。 备注：修改博客内容后，无需重启服务器，刷新浏览器即可看到更新（如果没更新，执行 hex...</div></div></div></a><a class="pagination-related" href="/2025/11/27/vue%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/" title="Vue的创建"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2025-11-27</div><div class="info-item-2">Vue的创建</div></div><div class="info-2"><div class="info-item-1">vue项目创建环境检测（必做）终端输入 1234node -vnpm -v#正常会输出版本号  node.js 版本在 20.19+ 可使用Vite进行项目创建   Vue CLI（适用于 Vue 2 &#x2F; Vue 3） Vite（新一代构建工具，更快更轻）    一、使用Vue CLI创建步骤  安装Vue ClI   1npm install -g @vue/cli  可使用vue -V查看版本   创建项目   1vue create my-blog 选择配置    可以选择默认配置（Vue 3）或者（Vue2） 或手动选择特性（比如 Babel、Router、Vuex、CSS 预处理器等）   进入项目并运行：12cd my-blognpm run serve 修改端口：找到vue.config.js,修改module.exports代码块,添加以下配置1234567module.exports = defineConfig(&#123;	transpileDependencies: true,	devServer: &#123;		port: 2421,		op...</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/%E5%A4%B4%E5%83%8F.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Panacea</div><div class="author-info-description">全栈开发经验分享</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">5</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">3</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">1</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Markdown-%E5%AE%8C%E6%95%B4%E5%B8%B8%E7%94%A8%E8%AF%AD%E6%B3%95%E6%B8%85%E5%8D%95"><span class="toc-number">1.</span> <span class="toc-text">Markdown 完整常用语法清单</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%9F%BA%E7%A1%80%E6%96%87%E6%9C%AC%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.1.</span> <span class="toc-text">一、基础文本格式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%A0%87%E9%A2%98%EF%BC%88%E5%B1%82%E7%BA%A7%E7%BB%93%E6%9E%84%EF%BC%89"><span class="toc-number">1.1.1.</span> <span class="toc-text">1. 标题（层级结构）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E6%AE%B5%E8%90%BD%E4%B8%8E%E6%8D%A2%E8%A1%8C"><span class="toc-number">1.1.2.</span> <span class="toc-text">2.  段落与换行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E6%96%87%E6%9C%AC%E5%BC%BA%E8%B0%83%EF%BC%88%E7%AA%81%E5%87%BA%E9%87%8D%E7%82%B9%EF%BC%89"><span class="toc-number">1.1.3.</span> <span class="toc-text">3.  文本强调（突出重点）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%88%97%E8%A1%A8%EF%BC%88%E6%9C%89%E5%BA%8F-%E6%97%A0%E5%BA%8F-%E4%BB%BB%E5%8A%A1%EF%BC%89"><span class="toc-number">1.1.4.</span> <span class="toc-text">4.  列表（有序 &#x2F; 无序 &#x2F; 任务）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%BC%95%E7%94%A8%EF%BC%88%E6%A0%87%E6%B3%A8%E8%AF%B4%E6%98%8E-%E5%BC%95%E7%94%A8%E5%86%85%E5%AE%B9%EF%BC%89"><span class="toc-number">1.1.5.</span> <span class="toc-text">5. 引用（标注说明 &#x2F; 引用内容）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%B0%B4%E5%B9%B3%E5%88%86%E9%9A%94%E7%BA%BF%EF%BC%88%E5%88%86%E5%89%B2%E7%AB%A0%E8%8A%82%EF%BC%89"><span class="toc-number">1.1.6.</span> <span class="toc-text">6. 水平分隔线（分割章节）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%B8%80%E7%AB%A0%E8%8A%82"><span class="toc-number">1.2.</span> <span class="toc-text">第一章节</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%AC%AC%E4%BA%8C%E7%AB%A0%E8%8A%82"><span class="toc-number">1.3.</span> <span class="toc-text">第二章节</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E9%93%BE%E6%8E%A5%E4%B8%8E%E5%9B%BE%E7%89%87%EF%BC%88%E6%96%87%E6%A1%A3%E8%B7%B3%E8%BD%AC-%E9%85%8D%E5%9B%BE%EF%BC%89"><span class="toc-number">1.4.</span> <span class="toc-text">二、链接与图片（文档跳转 &#x2F; 配图）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E5%A4%96%E9%83%A8%E9%93%BE%E6%8E%A5%EF%BC%88%E8%B7%B3%E8%BD%AC%E7%BD%91%E9%A1%B5%EF%BC%89"><span class="toc-number">1.4.1.</span> <span class="toc-text">1. 外部链接（跳转网页）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%86%85%E9%83%A8%E9%93%BE%E6%8E%A5%EF%BC%88%E6%96%87%E6%A1%A3%E5%86%85%E8%B7%B3%E8%BD%AC%EF%BC%89"><span class="toc-number">1.4.2.</span> <span class="toc-text">2. 内部链接（文档内跳转）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%9B%BE%E7%89%87%EF%BC%88%E6%8F%92%E5%85%A5%E6%9C%AC%E5%9C%B0-%E7%BD%91%E7%BB%9C%E5%9B%BE%E7%89%87%EF%BC%89%EF%BC%89"><span class="toc-number">1.4.3.</span> <span class="toc-text">3.  图片（插入本地 &#x2F; 网络图片））</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E3%80%81%E4%BB%A3%E7%A0%81%E4%B8%8E%E7%BB%88%E7%AB%AF%EF%BC%88%E6%8A%80%E6%9C%AF%E6%96%87%E6%A1%A3%E6%A0%B8%E5%BF%83%EF%BC%89"><span class="toc-number">1.5.</span> <span class="toc-text">三、代码与终端（技术文档核心）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E8%A1%8C%E5%86%85%E4%BB%A3%E7%A0%81%EF%BC%88%E7%9F%AD%E4%BB%A3%E7%A0%81%E7%89%87%E6%AE%B5%EF%BC%89"><span class="toc-number">1.5.1.</span> <span class="toc-text">1. 行内代码（短代码片段）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%A4%9A%E8%A1%8C%E4%BB%A3%E7%A0%81%E5%9D%97%EF%BC%88%E9%95%BF%E4%BB%A3%E7%A0%81-%E9%85%8D%E7%BD%AE%EF%BC%89"><span class="toc-number">1.5.2.</span> <span class="toc-text">多行代码块（长代码 &#x2F; 配置）</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/11/28/Vue%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84%E8%AF%A6%E8%A7%A3/" title="Vue项目结构详解">Vue项目结构详解</a><time datetime="2025-11-27T17:20:38.069Z" title="发表于 2025-11-28 01:20:38">2025-11-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/11/27/vue%E9%A1%B9%E7%9B%AE%E6%90%AD%E5%BB%BA/" title="Vue的创建">Vue的创建</a><time datetime="2025-11-27T00:50:16.280Z" title="发表于 2025-11-27 08:50:16">2025-11-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/11/26/Hexo%E6%93%8D%E4%BD%9C%E6%96%87%E6%A1%A3/" title="Hexo 搭建过程">Hexo 搭建过程</a><time datetime="2025-11-25T21:23:50.570Z" title="发表于 2025-11-26 05:23:50">2025-11-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/11/26/NVM%E7%9A%84%E5%AE%89%E8%A3%85%E4%B8%8E%E9%85%8D%E7%BD%AE/" title="NVM的安装与配置">NVM的安装与配置</a><time datetime="2025-11-25T20:16:12.665Z" title="发表于 2025-11-26 04:16:12">2025-11-26</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/11/26/Markdown%E6%BA%90%E7%A0%81%E6%A8%A1%E5%BC%8F%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95/" title="Markdown 完整常用语法清单">Markdown 完整常用语法清单</a><time datetime="2025-11-25T19:46:30.155Z" title="发表于 2025-11-26 03:46:30">2025-11-26</time></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By Panacea</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 7.3.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.2</a></span></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.2"></script><script src="/js/main.js?v=5.5.2"></script><div class="js-pjax"></div><script async data-pjax src="/"></script></div></body></html>
